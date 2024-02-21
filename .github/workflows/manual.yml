@@ -16,6 +16,6 @@ jobs:
           if [ ! -d /home/runner/repository ]; then
             # Clone repository only if it doesn't exist
             git clone git@github.com:sky-uk/Emulator_Manifest.git /home/runner/repository
-          fi
+          
 
      
