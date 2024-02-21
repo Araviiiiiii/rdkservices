@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3  # Latest GitHub Actions checkout action
-
       - name: Clone repository (if necessary)
         run: |
           if [ ! -d /home/runner/repository ]; then
