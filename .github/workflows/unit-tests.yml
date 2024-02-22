@@ -59,6 +59,10 @@ jobs:
             !install/usr/lib/wpeframework/plugins
           key: ${{ runner.os }}-${{ env.THUNDER_REF }}-${{ env.INTERFACES_REF }}-3
 
+      - name: Clone repository (if necessary)
+        run: |
+            git clone git@github.com:sky-uk/Emulator_Manifest.git /home/runner/repository
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
